@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <title>Quase pronto...</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #cfe9fd52;
+            padding-top: 5vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+        
+        h2,
+        h3 {
+            color: #134673;
+        }
+        
+        p {
+            font-size: 20px;
+            background: #27d6660a;
+            padding: 5px;
+            color: #148046;
+            font-style: italic;
+            border: 1px solid #3b8a60;
+            border-radius: 10px;
+            padding-left: 5vw;
+        }
+        
+        span {
+            font-weight: bold;
+            font-size: 26px;
+        }
+        
+        b {
+            font-size: 15px;
+            float: right;
+            margin-top: 15px;
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TVFW4SC');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-brand">
+                        <img src="img/logo-oma-planilhas.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:5vh" class="row">
+                <div class="col-md-10">
+                    <h2>Só mais um passo...</h2>
+                    <h1 style="border:1px solid #4968a32b"></h1>
+                    <h3>Você prefere pagar pelo PagSeguro ou Paypal? <span style="font-size: 15px">(Lembrando que o
+                            PagSeguro aceita boleto e as duas são as plataformas mais seguras do mercado e garantem
+                            devolução do dinheiro.)</span></h3>
+                    <div style="margin-top: 10vh; display: flex; justify-content: space-evenly; flex-wrap: wrap">
+                        <div>
+                            <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                            <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                                <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                                <input type="hidden" name="code" value="2AE72C3AD8D83C97743FEFB923CAD248" />
+                                <input type="hidden" name="iot" value="button" />
+                                <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif"
+                                    name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                            </form>
+                            <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+                            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                        </div>
+                        <div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="MD37X5YMR5TVE">
+                                <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif"
+                                    border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1"
+                                    height="1">
+                            </form>
+
+                        </div>
+                    </div>
+                    <h1 style="border:1px solid #4968a32b"></h1>
+                    <p style="margin-top:5vh"><span>"</span> Só evite fazer algo hoje se você quiser morrer e deixar
+                        assuntos inacabados <span>"</span><br><b> – Pablo Picasso</b></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
